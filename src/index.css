@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: o;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.grey {
+  color: #918e9b;
+}
+.bold {
+  font-weight: 900;
+}
+.MyNav {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 1px 1px 20px rgba(184, 175, 175, 0.6);
+}
+section {
+  padding: 20px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero img {
+  margin: auto;
+  margin-top: 20px;
+  width: 80vw;
+  align-self: center;
+}
+
+.text {
+  margin-left: 30px;
+}
+.cards {
+  padding: 0 20px;
+  position: relative;
+}
+.cardsimg {
+  border-radius: 9px;
+}
+
+.cardText {
+  display: flex;
+  align-items: center;
+}
+#cardSection {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.faint {
+  font-weight: lighter;
+}
+.star {
+  height: 15px;
+}
+.sold {
+  position: absolute;
+  padding: 4px;
+  top: 12px;
+  left: 30px;
+  background-color: #fff;
+  color: black;
+  border-radius: 3px;
+}
+#flexed {
+  display: flex;
+}
+.prev,
+.next {
+  z-index: 1;
+  position: absolute;
+  bottom: -400px;
+  font-size: 40px;
+  cursor: pointer;
+  width: 34px;
+  border-radius: 0 12px 12px 0;
+  border: none;
+  background-color: transparent;
+}
+.prev:hover,
+.next:hover {
+  background-color: #000;
+  color: #fff;
+}
+.next {
+  right: 0;
+  border-radius: 12px 0 0 12px;
+  padding-left: 12px;
+}
+@media (max-width: 768px) {
+  .hero img {
+    width: 90vw;
+  }
+  .cardImg {
+    width: 50vw;
+  }
+  .prev,
+  .next {
+    bottom: -100px;
+  }
+}
